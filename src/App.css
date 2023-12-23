@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+* {}
+
+.app-wrapper {
+    display: grid;
+    grid-template-rows: 4em 1fr;
+    grid-template-columns: 2fr 10fr;
+    grid-gap: 1em;
+    padding-right: 15%;
+    padding-left: 15%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav {
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: .3em;
+    overflow: hidden;
+    min-width: 6.5em;
+    height: max-content;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav ul {
+    margin: 0;
+    padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav li {
+    list-style-type: none;
+    font-size: larger;
 }
 
-.App-link {
-  color: #61dafb;
+.nav>ul>li>a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    line-height: 2em;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    transition: all .1s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav>ul>li>a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    grid-area: 1 / 1 / 2 / 3;
+    background-color: rgb(91, 91, 91);
+    border-radius: .4em;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    gap: 2em;
+    font: lighter larger 'Arial' sans-serif;
+    color: rgb(0, 217, 255);
+}
+
+.content {
+    grid-area: 2 / 2 / 3 / 3;
+    overflow: hidden;
+    border-radius: .4em;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.logoImage {
+    width: 3.5em;
+    margin-left: 1em;
+    padding-top: 3px;
+}
+
+.lenImg {
+    width: 100%;
+    display: block;
+    align-items: center;
+    overflow: hidden;
+    height: 8em;
+    border-radius: .4em;
+}
+
+.lenImg>img {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+}
+
+.profilecard {
+    display: flex;
+    margin-top: 1em;
+    gap: 1em;
+}
+
+.profile-avatar {
+    width: 10em;
+    height: 10em;
+    border-radius: .4em;
+    overflow: hidden;
+}
+
+.profile-avatar>img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
