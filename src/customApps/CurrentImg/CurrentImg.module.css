@@ -1,0 +1,15 @@
+.dayimg {
+    width: 100%;
+    display: block;
+    align-items: center;
+    overflow: hidden;
+    height: 8em;
+    border-radius: .4em;
+}
+
+.dayimg>img {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+}

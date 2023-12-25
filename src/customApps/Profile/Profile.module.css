@@ -1,0 +1,19 @@
+.card {
+    display: flex;
+    margin-top: 1em;
+    gap: 1em;
+}
+
+.avatar {
+    width: 10em;
+    height: 10em;
+    border-radius: .4em;
+    overflow: hidden;
+}
+
+.avatar>img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}

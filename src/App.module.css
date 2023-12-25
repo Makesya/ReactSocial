@@ -1,0 +1,18 @@
+.wrapper {
+    display: grid;
+    grid-template-rows: 4em 1fr;
+    grid-template-columns: 2fr 10fr;
+    grid-gap: 1em;
+    padding-right: 15%;
+    padding-left: 15%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.content {
+    grid-area: 2 / 2 / 3 / 3;
+    overflow: hidden;
+    border-radius: .4em;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}

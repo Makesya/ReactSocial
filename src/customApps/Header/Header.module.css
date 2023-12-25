@@ -1,0 +1,17 @@
+.header {
+    grid-area: 1 / 1 / 2 / 3;
+    background-color: rgb(91, 91, 91);
+    border-radius: .4em;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    gap: 2em;
+    font: lighter larger 'Arial' sans-serif;
+    color: rgb(0, 217, 255);
+}
+
+.logoImage {
+    width: 3.5em;
+    margin-left: 1em;
+    padding-top: 3px;
+}
